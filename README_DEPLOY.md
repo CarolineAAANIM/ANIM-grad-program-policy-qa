@@ -1,14 +1,17 @@
 
-# ANIM Grad Program Policy Q&A App — Deployment Package (v2)
+# ANIM Grad Program Policy Q&A App — Deployment Package (v3)
 
-This package fixes the logo path issue by using **logo.png** and adds a **fallback placeholder** if the file is missing.
+**This version adds Word (.docx) support**, improved PDF text extraction (pdfminer fallback), `st.rerun()` compatibility, an **Index Health** panel, and a **substring fallback** when BM25 returns no results.
 
-## Deployment Steps
-1. Upload all files to a GitHub repo (root).
+## Deploy Steps
+1. Create a GitHub repo and upload all files.
 2. In Streamlit Cloud, create a new app pointing to `app.py`.
-3. Share the generated URL. Faculty password: `ANIMGRAD`. Admin code: `ANIMADMIN`.
+3. Share your generated URL; Faculty password: `ANIMGRAD`, Admin code: `ANIMADMIN`.
 
-## Notes
-- If you change the logo in Admin Panel, it will be saved as `logo.png`.
-- If `logo.png` does not exist, the app shows a placeholder banner.
-- Q&A history is persisted to `qa_logs.csv` and downloadable from Admin Panel.
+## Runtime Uploads
+- Upload **PDF or DOCX** via Admin mode. PDFs use `pdfminer.six` first and fall back to PyPDF2; DOCX uses `python-docx`.
+- Associate URLs for each document to enable "Read more" links.
+
+## Debugging
+- Use the **Index Health** expander to confirm `policy_index.json` and runtime chunks are loaded.
+- If you see 0 chunks, ensure `policy_index.json` exists in the repo root and that uploaded files contain text (DOCX or text-layer PDFs).
