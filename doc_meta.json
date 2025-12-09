@@ -1,0 +1,22 @@
+{
+  "password": "ANIMGRAD",
+  "admin_code": "ANIMADMIN",
+  "logo_path": "logo.png",
+  "docs": [
+    {
+      "file": "ANIM_Program Guide_2025-26.pdf",
+      "display": "ANIM_Program Guide_2025-26.pdf",
+      "url": "https://depts.scad.edu/sites/depts/files/mgarriga/ANIM_Program%20Guide_2025-26.pdf"
+    },
+    {
+      "file": "ANIM_Review Guidelines_Revised 2024.pdf",
+      "display": "ANIM_Review Guidelines_Revised 2024.pdf",
+      "url": "https://depts.scad.edu/sites/depts/files/mgarriga/ANIM_Review%20Guidelines_Revised%202024_1.pdf"
+    },
+    {
+      "file": "ANIM_ Graduate Thesis Guidelines_2023-2024_revised 2023.pdf",
+      "display": "ANIM_ Graduate Thesis Guidelines_2023-2024_revised 2023.pdf",
+      "url": "https://depts.scad.edu/sites/depts/files/evcarter/ANIM_%20Graduate%20Thesis%20Guidelines_2023-2024_revised_0_1.pdf"
+    }
+  ]
+}
