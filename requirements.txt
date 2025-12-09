@@ -14,4 +14,3 @@ mammoth==1.6.0
 
 # LLM client
 openai==1.51.2
-
